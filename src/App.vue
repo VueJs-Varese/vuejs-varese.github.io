@@ -1,0 +1,13 @@
+<script lang="ts" setup>
+    import DefaultLayout from "./layouts/DefaultLayout.vue";
+</script>
+
+<template>
+    <DefaultLayout>
+        <RouterView />
+    </DefaultLayout>
+</template>
+
+<style lang="scss">
+    @import "@/assets/scss/index";
+</style>
