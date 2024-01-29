@@ -1,5 +1,5 @@
 {
-  "name": "@byloth/tuemplate",
+  "name": "@vuejs-varese/website",
   "version": "1.0.0",
   "description": "A Vue.js 3 template app based on Vite with TypeScript, Pinia, Vue Router and more.",
   "keywords": [
@@ -10,13 +10,13 @@
     "Pinia",
     "Vue Router"
   ],
-  "homepage": "https://github.com/Byloth/tuemplate#readme",
+  "homepage": "https://github.com/VueJs-Varese/vuejs-varese.github.io#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Byloth/tuemplate.git"
+    "url": "git+https://github.com/VueJs-Varese/vuejs-varese.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/Byloth/tuemplate/issues"
+    "url": "https://github.com/VueJs-Varese/vuejs-varese.github.io/issues"
   },
   "author": {
     "name": "Matteo Bilotta",

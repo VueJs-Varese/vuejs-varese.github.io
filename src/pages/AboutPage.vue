@@ -2,7 +2,9 @@
 
 <template>
     <div>
-        This website was made by using:
+        <h1>About this website</h1>
+        <hr />
+        <p>This website was made by using:</p>
         <ul>
             <li>
                 <a href="https://vitejs.dev/"
@@ -69,6 +71,7 @@
 </template>
 
 <style lang="scss" scoped>
+    p,
     ul
     {
         text-align: left;

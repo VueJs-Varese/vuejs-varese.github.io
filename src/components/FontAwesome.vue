@@ -5,10 +5,24 @@
         icon: {
             type: String,
             required: true
+        },
+        brands: {
+            type: Boolean,
+            default: false
         }
     });
 
-    const classes = computed(() => ({ [`fa-${props.icon}`]: true }));
+    const classes = computed(() =>
+    {
+        if (props.brands)
+        {
+            return ["fa-brands", `fa-${props.icon}`];
+        }
+        else
+        {
+            return ["fa-solid", `fa-${props.icon}`];
+        }
+    });
 </script>
 
 <template>
