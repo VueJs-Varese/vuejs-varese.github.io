@@ -11,9 +11,23 @@
     "jsx": "preserve",
     "jsxImportSource": "vue",
     "paths": { "@/*": ["./src/*"] },
-    "types": ["vite/client"]
+    "types": [
+      "vite/client",
+      "vitepress/client"
+    ]
   },
   "include": [
-    "../src"
+    "../.vitepress/**/*",
+    "../.vitepress/**/*.json",
+    "../.vitepress/**/*.vue",
+
+    "../src/**/*",
+    "../src/**/*.json",
+    "../src/**/*.vue"
+  ],
+  "exclude": [
+    "../cache",
+    "../dist",
+    "../node_modules"
   ]
 }

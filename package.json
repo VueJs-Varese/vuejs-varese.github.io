@@ -26,9 +26,9 @@
   "license": "Apache-2.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
     "check:types": "vue-tsc --build --force",
     "lint": "eslint --ext .cjs,.js,.json,.ts,.vue --ignore-path .gitignore .",
     "lint:prod": "export NODE_ENV=\"production\" && yarn lint",
@@ -58,6 +58,7 @@
     "sass": "^1.70.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
+    "vitepress": "^1.0.0-rc.40",
     "vue-eslint-parser": "^9.4.2",
     "vue-tsc": "^1.8.27"
   },
