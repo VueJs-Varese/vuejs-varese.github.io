@@ -1,4 +1,4 @@
-name: Publish
+name: Publish on GitHub Pages
 on:
   push:
     branches: [master]
@@ -9,32 +9,40 @@ concurrency:
 
 jobs:
   build:
-    name: Build
+    name: Project build
     runs-on: ubuntu-latest
     steps:
-      - name: Source code clone
+      - name: Cloning source code
         uses: actions/checkout@v4
-      - name: Node.js 20 (LTS) setup
+      - name: "Installing `pnpm`"
+        uses: pnpm/action-setup@v3
+        with:
+          version: latest
+      - name: Configuring Node.js 20 (LTS)
         uses: actions/setup-node@v4
         with:
+          cache: pnpm
           node-version: 20
 
-      - name: Dependencies installation
-        run: yarn ci
-      - name: Coding standard check
-        run: yarn lint:prod
-      - name: Types integrity check
-        run: yarn check:types
-      - name: Source code build
-        run: yarn build
-      - name: Artifact upload
+      - name: Installing dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Linting the source code
+        run: pnpm lint
+        env:
+          NODE_ENV: production
+
+      - name: Checking type consistency
+        run: pnpm typecheck
+      - name: Building the source code
+        run: pnpm build
+      - name: Uploading the artifact
         uses: actions/upload-artifact@v4
         with:
           name: vuejs-varese-website
           path: dist
 
   deploy:
-    name: GitHub Pages deploy
+    name: Artifact deploy
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -43,20 +51,20 @@ jobs:
       id-token: write
 
     steps:
-      - name: Artifact download
+      - name: Downloading the artifact
         uses: actions/download-artifact@v4
         with:
           name: vuejs-varese-website
 
-      - name: GitHub Pages setup
+      - name: Configuring GitHub Pages
         uses: actions/configure-pages@v4
-      - name: Artifact upload
+      - name: Uploading to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
 
       - id: deployment
-        name: GitHub Pages deployment
+        name: Deploying to GitHub Pages
         uses: actions/deploy-pages@v4
 
     environment:

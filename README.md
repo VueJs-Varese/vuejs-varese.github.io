@@ -1,31 +1,43 @@
 # Vue.js Varese
 
-A Vue.js 3 template app based on Vite with TypeScript, Pinia, Vue Router and more.
+Il sito web ufficiale della community locale di Vue.js Varese.
 
-## Customize configuration
+## Prerequisites
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Make sure to have [**Node.js**](https://nodejs.org/) installed on your system.
+
+### Package Manager
+
+Enable [`pnpm`](https://pnpm.io/) as the package manager for the project:
+
+```bash
+corepack enable pnpm
+```
 
 ## Project Setup
 
 ```sh
-yarn
+pnpm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-yarn dev
+pnpm dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-yarn build
+pnpm build
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-yarn lint
+pnpm lint
 ```
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).

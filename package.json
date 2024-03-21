@@ -1,22 +1,23 @@
 {
   "name": "@vuejs-varese/website",
   "version": "1.0.0",
-  "description": "A Vue.js 3 template app based on Vite with TypeScript, Pinia, Vue Router and more.",
+  "description": "Il sito web ufficiale della community locale di Vue.js Varese.",
   "keywords": [
     "Vue.js",
-    "Template",
+    "Varese",
     "Vite.js",
+    "Vitepress",
     "TypeScript",
-    "Pinia",
-    "Vue Router"
+    "Community",
+    "Website"
   ],
-  "homepage": "https://github.com/VueJs-Varese/vuejs-varese.github.io#readme",
+  "homepage": "https://github.com/vuejs-varese/vuejs-varese.github.io#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VueJs-Varese/vuejs-varese.github.io.git"
+    "url": "git+https://github.com/vuejs-varese/vuejs-varese.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/VueJs-Varese/vuejs-varese.github.io/issues"
+    "url": "https://github.com/vuejs-varese/vuejs-varese.github.io/issues"
   },
   "author": {
     "name": "Matteo Bilotta",
@@ -29,38 +30,28 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "check:types": "vue-tsc --build --force",
+    "typecheck": "vue-tsc --build --force",
     "lint": "eslint --ext .cjs,.js,.json,.ts,.vue --ignore-path .gitignore .",
-    "lint:prod": "export NODE_ENV=\"production\" && yarn lint",
-    "ci": "yarn install --frozen-lockfile"
+    "prepare": "husky"
   },
   "dependencies": {
-    "@byloth/core": "^1.3.0-rc.1",
-    "@byloth/exceptions": "^2.2.2",
-    "@byloth/vuert": "^1.2.0",
-    "@fortawesome/fontawesome-free": "^6.5.1",
-    "@vueuse/core": "^10.7.2",
-    "axios": "^1.6.7",
-    "bootstrap": "^5.3.2",
-    "pinia": "^2.1.7",
-    "vue": "^3.3.15",
-    "vue-router": "^4.2.5"
+    "vue": "^3.4.21"
   },
   "devDependencies": {
-    "@byloth/eslint-config-typescript": "^2.6.8",
-    "@byloth/eslint-config-vue": "^2.6.8",
-    "@types/node": "^20.11.10",
-    "@typescript-eslint/eslint-plugin": "^6.19.1",
-    "@typescript-eslint/parser": "^6.19.1",
-    "@vitejs/plugin-vue": "^5.0.3",
-    "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.20.1",
-    "sass": "^1.70.0",
-    "typescript": "^5.3.3",
-    "vite": "^5.0.12",
-    "vitepress": "^1.0.0-rc.40",
+    "@byloth/eslint-config-nuxt": "^2.7.0",
+    "@types/node": "^20.11.30",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "husky": "^9.0.11",
+    "sass": "^1.72.0",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.2",
+    "vitepress": "^1.0.0",
     "vue-eslint-parser": "^9.4.2",
-    "vue-tsc": "^1.8.27"
+    "vue-tsc": "^2.0.7"
   },
   "private": true
 }

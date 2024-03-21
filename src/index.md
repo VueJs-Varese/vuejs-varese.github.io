@@ -7,7 +7,7 @@ hero:
   text: "Community locale"
   tagline: "Vue.js: il framework JavaScript progressivo"
   image:
-    src: /vuejs-varese.png
+    src: /images/vuejs-varese.png
     alt: Vue.js Varese
 
   actions:

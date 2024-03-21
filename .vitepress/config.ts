@@ -24,7 +24,7 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     //
-    logo: "/vuejs-varese.png",
+    logo: "/images/vuejs-varese.png",
 
     nav: [
       { text: "Home", link: "/" }
