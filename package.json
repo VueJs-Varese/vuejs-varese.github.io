@@ -35,23 +35,24 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "vue": "^3.4.21"
+    "vue": "^3.4.27"
   },
   "devDependencies": {
-    "@byloth/eslint-config-nuxt": "^2.7.0",
-    "@types/node": "^20.11.30",
-    "@typescript-eslint/eslint-plugin": "^7.3.1",
-    "@typescript-eslint/parser": "^7.3.1",
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@byloth/eslint-config-nuxt": "^2.8.1",
+    "@types/node": "^20.14.2",
+    "@typescript-eslint/eslint-plugin": "^7.12.0",
+    "@typescript-eslint/parser": "^7.12.0",
+    "@vitejs/plugin-vue": "^5.0.5",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.23.0",
+    "eslint-plugin-vue": "^9.26.0",
     "husky": "^9.0.11",
-    "sass": "^1.72.0",
-    "typescript": "^5.4.3",
-    "vite": "^5.2.2",
-    "vitepress": "^1.0.0",
-    "vue-eslint-parser": "^9.4.2",
-    "vue-tsc": "^2.0.7"
+    "sass": "^1.77.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.12",
+    "vitepress": "^1.2.3",
+    "vue-eslint-parser": "^9.4.3",
+    "vue-tsc": "^2.0.19"
   },
-  "private": true
+  "private": true,
+  "packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
 }

@@ -12,7 +12,12 @@ export default defineConfig({
   description: "Community locale dedicata a Vue.js: il framework JavaScript progressivo.",
 
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }]
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["script", {
+      "src": "https://cloud.umami.is/script.js",
+      "data-website-id": "b100d761-5b11-4d32-b5e9-0b640e98a819",
+      "defer": ""
+    }]
   ],
 
   lastUpdated: true,
@@ -41,6 +46,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: "discord", link: "https://discord.gg/mEjrFREsEz" },
+      { icon: "facebook", link: "https://www.facebook.com/vuejs.varese" },
       { icon: "github", link: "https://github.com/vuejs-varese" },
       { icon: "instagram", link: "https://www.instagram.com/vuejs_varese/" },
       { icon: "linkedin", link: "https://www.linkedin.com/company/vuejs-varese/" },
