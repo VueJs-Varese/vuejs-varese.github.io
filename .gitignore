@@ -19,7 +19,7 @@ Desktop.ini
 /cache/
 /dist/
 
-*.tsbuildinfo
+/tsconfig/*.tsbuildinfo
 
 # Environmental files
 #

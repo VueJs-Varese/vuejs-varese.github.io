@@ -4,8 +4,5 @@
     "composite": true,
     "types": ["node"]
   },
-  "include": [
-    "../vite.config.ts",
-    "../.vitepress/config.ts"
-  ]
+  "include": ["../.vitepress/config.ts"]
 }
