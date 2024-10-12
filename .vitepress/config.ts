@@ -45,7 +45,7 @@ export default defineConfig({
     // }],
 
     socialLinks: [
-      { icon: "discord", link: "https://discord.gg/mEjrFREsEz" },
+      { icon: "discord", link: "https://discord.gg/caKNYD8T4P" },
       { icon: "facebook", link: "https://www.facebook.com/vuejs.varese" },
       { icon: "github", link: "https://github.com/vuejs-varese" },
       { icon: "instagram", link: "https://www.instagram.com/vuejs_varese/" },
@@ -57,8 +57,6 @@ export default defineConfig({
 
     footer: {
       message: "Made with ❤️ by Vue.js Varese.",
-
-      // eslint-disable-next-line max-len
       copyright: `Copyright © ${new Date().getFullYear()} Vue.js Varese.`
     }
   },

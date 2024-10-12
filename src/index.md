@@ -14,9 +14,9 @@ hero:
     - theme: brand
       text: Unisciti su Telegram
       link: https://t.me/vuejs_varese
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
+    - theme: alt
+      text: Partecipa su Discord
+      link: https://discord.gg/caKNYD8T4P
 
 features:
   - title: Community
@@ -36,4 +36,3 @@ features:
 #   - title: Feature C
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

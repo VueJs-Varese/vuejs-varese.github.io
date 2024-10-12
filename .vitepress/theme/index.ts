@@ -14,6 +14,6 @@ export default {
         //
         return h(DefaultTheme.Layout, null, { });
     },
-    enhanceApp: ({ app, router, siteData }) => { }
+    enhanceApp: ({ app, router, siteData }) => { /* ... */ }
 
 } satisfies Theme;

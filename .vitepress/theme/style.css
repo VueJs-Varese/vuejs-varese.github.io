@@ -130,6 +130,11 @@
     );
 }
 
+.VPHomeHero .main > .name
+{
+    font-weight: 900;
+}
+
 @media (min-width: 640px)
 {
     :root
